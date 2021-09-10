@@ -1,0 +1,1 @@
+web: gunicorn custmansys.wsgi --log-file -
