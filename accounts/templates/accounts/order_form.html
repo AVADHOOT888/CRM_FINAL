@@ -1,0 +1,28 @@
+{%  extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="row" style='background-color: #4cb4c7;
+color:white;padding:20px;margin:50px;display: flex;justify-content: center;align-items: center; '>
+	
+		
+
+			<form action="" method="POST">
+				{% csrf_token %}
+				{{ formset.management_form }}
+				{% for form in formset %}
+				
+				{{form}}
+				<hr>
+				{% endfor %}
+				
+				<input type="submit" class='btn btn-danger btn-sm btn-sm' name="Submit">
+			</form>
+
+		
+	
+</div>
+
+
+{% endblock %}
