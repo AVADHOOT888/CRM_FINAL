@@ -26,9 +26,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '67!#q0c*@i#+fqt_n7#i&9%nfw&6&!%tn_z^8e#hbxf*qtve@&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['crm-avadhoot.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['crm-avadhoot.herokuapp.com']
 
 
 # Application definition
